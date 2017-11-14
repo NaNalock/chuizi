@@ -1,0 +1,138 @@
+<!--当前文档类型是html-->
+<!doctype html>
+<html>
+	<head>
+		 <!--meta没有实际意义，通过name值给它赋值赋予意义,声明当前编码机：gbk gb2313 中文编码
+		 utf-8  国际编码-->
+		 <meta http-equiv='Content-type' content='text/html;charset=utf-8' />
+		 <title>国际通用模板</title>
+		 <!--关键词限制在31字以内，用英文逗号隔开-->
+		 <meta name="Keywords" content="关键词,关键词" />
+		 <!--简介，描述信息，百度要求是80字以内 标准是76个字-->
+		 <meta name="description" content="描述描述" />
+
+	     <style type="text/css">
+			*{margin:0;padding:0;}
+			a{text-decoration:none;}
+			ul{list-style:none;}
+			img{border:0;}       /*针对兼容低版本IE*/
+			.clearfix:after{content:'';display:block;clear:both;}
+			.clearfix{zoom:1;}
+			body{height:3000px;}
+			.header{position:relative;height:98px;border:1px solid #ccc;}
+			.header .logo{
+				position:absolute;
+				top:50%;
+				left:50%;
+				margin-left:-180px;
+				width:375px;
+				height:86px;
+				background:url('images/1.jpg') no-repeat 0px -522px;}
+			
+			.banner-box li{
+				position:relative;
+				float:left;
+				width:1000px;
+				height:500px;
+				border:1px solid blue;
+				margin:63px auto;
+			}
+			.banner{
+				width:3000px;
+			}
+			.banner-box{position:relative;width:1000px;margin:63px auto;
+				overflow:hidden;}
+			.banner-box	li img{
+				display:block;
+			}
+			.banner-box	li div{position:absolute;bottom:-75px;left:50%;margin-left:-445px;width:830px;height:90px;padding:30px;border:1px solid green;
+			background:rgba(0,0,0,0.5);}
+			.banner-box	li div p{
+				
+				color:#fff;
+				display:inline-block;
+				float:left;
+			}
+			.banner-box	li div p.left{
+				width:300px;
+				padding:10px;
+				font-size:24px;
+				border-right:1px solid #fff;
+			}
+			.banner-box	li div p.rig{
+				width:480px;
+				font-size:14px;
+				padding:10px;
+				padding-left:17px;
+			}
+			.banner-box a{
+				position:absolute;
+				width:58px;
+				height:75px;
+				background:url('images/3.png') no-repeat 0 -78px;
+			
+			}
+			.banner-box a:hover{background-color:rgba(0,0,0,0.5)}
+			.banner-box a.prev{
+				left:0;
+				top:50%;
+			}
+			.banner-box a.next{
+				right:0;
+				top:50%;
+				background-position:0 -147px;
+			}
+			.btn{text-align:center;}
+			.btn a{display:inline-block;width:10px;height:10px;border-radius:50%;background-color:#ccc;margin-right:10px;}
+			.btn a.bt-1{background:red;}
+			.btn a:hover{background:red;}
+
+
+			
+
+	     </style>
+	</head>
+	<body>
+		<div class="header">
+			<p class='logo'></p>
+		
+		</div>
+		<div class='banner-box'>
+			<ul class='banner clearfix'>
+				<li>
+					<img src='images/2.jpg' alt='' />
+					<div>
+						<p class='left'>5分钟就能搞定的时髦派对妆 秒杀大红唇和烟熏眼</p>
+						<p class='rig'>
+							红唇与烟熏妆曾是派对妆的“标配”，这个过时的规则早就该打破了。今年秋冬的彩妆流行是简洁时髦的美感：一抹亮片眼影，一个出其不意的眼线，一只镇住全场的唇膏。既然能花5分钟就搞定的派对妆，为什么要花一个小时呢？
+						</p>
+					</div>
+				</li>
+				<li>
+					<img src='images/4.jpg' alt='' />
+					<div>
+						<p class='left'>5分钟就能搞定的时髦派对妆 秒杀大红唇和烟熏眼</p>
+						<p class='rig'>
+							红唇与烟熏妆曾是派对妆的“标配”，这个过时的规则早就该打破了。今年秋冬的彩妆流行是简洁时髦的美感：一抹亮片眼影，一个出其不意的眼线，一只镇住全场的唇膏。既然能花5分钟就搞定的派对妆，为什么要花一个小时呢？
+						</p>
+					</div>
+				</li>
+			</ul>
+			<a href='' class='prev'></a>
+			<a href='' class='next'></a>
+		
+		
+		</div>
+		<div class='btn'>
+			<a href='' class='bt-1'></a>
+			<a href=''></a>
+			<a href=''></a>
+			<a href=''></a>
+		
+		</div>
+		
+		
+	
+	</body>
+
+</html>

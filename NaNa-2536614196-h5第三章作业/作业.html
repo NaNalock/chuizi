@@ -1,0 +1,50 @@
+<!--当前文档类型是html-->
+<!doctype html>
+<html>
+	<head>
+		 <!--meta没有实际意义，通过name值给它赋值赋予意义,声明当前编码机：gbk gb2313 中文编码
+		 utf-8  国际编码-->
+		 <meta http-equiv='Content-type' content='text/html;charset=utf-8' />
+		 <title>国际通用模板</title>
+		 <!--关键词限制在31字以内，用英文逗号隔开-->
+		 <meta name="Keywords" content="关键词,关键词" />
+		 <!--简介，描述信息，百度要求是80字以内 标准是76个字-->
+		 <meta name="description" content="描述描述" />
+
+	     <style type="text/css">
+			*{margin:0;padding:0;}
+			a{text-decoration:none;color:#666;}
+			ul{list-style:none;}
+			img{border:0;}       /*针对兼容低版本IE*/
+			.clearfix:after{content:'';display:block;clear:both;}
+			.clearfix{zoom:1;}
+
+			body{background: url('images/bg_head.jpg') repeat-x top center,url('images/bg_tile.jpg');}
+			.nav{overflow:hidden;width: 580px;height: 46px;line-height: 46px;margin: 100px auto;font-size: 16px;background-image: linear-gradient(#FDFDFD 0%,#F8F8F8 50% ,#E6E6E6 51%); border-radius:5px;}
+
+			.nav li{position: relative;float: left;z-index: 1;}
+			.nav li.home{padding: 0;height: 46px;}
+			.nav li.home a{display: block;width: 40px;height: 100%;padding: 0;background: url('images/home.png') no-repeat center;}
+			
+			.nav li + li{border-left: 1px solid #aaa;}
+			.nav li a{display: block;width: 100%;height: 46px;line-height: 46px;padding: 0 35px;}
+			.nav li a:after{opacity:0;content:'';position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index:-1;background-image:linear-gradient(90deg,#C9C9C9,#F4F1ED,#C9C9C9);}
+			.nav li:hover a:after{opacity:1;}
+			
+
+
+	     </style>
+	</head>
+	<body>
+		<ul class="nav clearfix">
+			<li class='home'><a href="" ></a></li>
+			<li><a href="">资讯信息</a></li>
+			<li><a href="">关于我们</a></li>
+			<li><a href="">服务信息</a></li>
+			<li><a href="">联系我们</a></li>
+		</ul>
+		
+	
+	</body>
+
+</html>
