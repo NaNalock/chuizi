@@ -1,0 +1,234 @@
+@charset 'utf-8';
+/* 头部导航 */
+.header{
+	height:30px;
+	background:#F4F4F4;
+	border-bottom:1px solid #ccc;
+
+}
+.com-nav{
+	width:1228px;
+	margin:auto;
+	height:29px;
+	line-height:29px;
+}
+.com-nav a:hover{color:red;}
+
+.nav-lef{
+	float:left;
+}
+.nav-lef i{vertical-align:middle;color:red;}
+.nav-rig{
+	float:right;
+}
+.nav-rig i{vertical-align:middle;}
+.nav-rig li{
+	float:left;
+	
+	padding:0 10px;
+}
+
+.nav-rig li .ls1{color:red;}
+.nav-rig .ls2{
+	position:relative;
+	border:1px solid transparent;
+}
+
+.nav-rig .ls2:hover{
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+	background:#fff;
+}
+.nav-rig .ls2:hover .list{display:block;}
+.nav-rig .ls2 .iconfont{transition:0.3s;}
+.nav-rig .ls2:hover .iconfont{display:inline-block;transform:rotate(180deg);}
+
+
+.nav-rig .ls2 .list{
+	position:absolute;
+	display:none;
+	left:-1px;
+	width:100%;
+	text-indent:1em;
+	border:1px solid #ccc;
+	border-top:none;
+	background:#fff;
+}
+
+.nav-rig li .list a{display:block;}
+
+.nav-rig li.ls3{
+	border-left:1px solid transparent;
+	border-right:1px solid transparent;
+}
+.nav-rig li.ls3:hover{
+	background:#fff;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+}
+.nav-rig .ls3 .icon-xia{transition:0.3s;}
+.nav-rig .ls3:hover .icon-xia{display:inline-block;transform:rotate(180deg);}
+/* 中部搜搜搜索 */
+/* 开始logo */
+.hd-search{
+	width:1228px;
+	height:190px;
+	margin:auto;
+	/* border:1px solid red; */
+}
+.logo{
+	width:205px;
+	height:150px;
+	background:url('../images/1.png') no-repeat center/cover;
+/* 	border:1px solid red; */
+}
+.logo a{
+	display:block;
+	width:100%;
+	height:100%;
+}
+/* 开始搜索框 */
+.search-wrap{
+	width:988px;
+	margin-top:30px;
+	padding-left:35px;
+}
+.search-wrap .txt{
+	width:700px;
+	height:36px;
+	font-size:16px;
+	border:2px solid red;
+	text-indent:1em;
+}
+.search-wrap button .iconfont{
+	display:block;
+	height:40px;
+	width:50px;
+	background-color: red;
+	color:#fff;
+	
+	line-height:40px;
+	
+}
+/* seach-nav */
+.search-nav{margin-top:10px;}
+.search-nav a{
+	font-size:14px;
+	padding-right:20px;
+	
+	color:#aaa;
+}
+.search-nav a:hover{color:red;}
+/* 购物车开始 */
+.search-wrap .shop {
+	width:132px;
+	height:40px;
+	line-height:40px;
+	
+	text-align:center;
+	word-spacing:10px;
+}
+.search-wrap .shop{
+	position:relative;
+	display:block;
+	z-index:1;
+	border-color: #fff;
+	border:1px solid #d7d7d7;
+}
+.search-wrap .shop a{
+	display:block;
+	width:100%;
+	height:100%;
+	background: #fff;
+}
+.search-wrap .shop:hover{border-bottom-color: #fff;}
+.search-wrap .shop:hover .car{display:block;}
+
+.search-wrap .shop .car{
+	display:none;
+	position:absolute;
+	top:39px;
+	right:-1px;
+	width:386px;
+	height:268px;
+	z-index:-1;
+	border:1px solid #d7d7d7;
+	background-color: #fff;
+}
+.search-wrap .shop .car p{
+	width:117px;
+	height:77px;
+	margin:69px 0 0 132px;
+	background:url('../images/2.png') no-repeat -267px -32px;
+
+}
+/* sea-list */
+
+.sea-list{
+	margin-top:30px;
+}
+.sea-list a{
+	padding-right:35px;
+	color:#000;
+}
+.sea-list a:hover{color:red;}
+/* 开始底部 */
+.hd-footer{
+	width: 100%;
+	height: 449px;
+	background: #fff;
+	
+}
+.footer-wrap{width: 1228px;height: 100%;margin: auto;}
+.footer-wrap .foot-top{
+	height: 127px;
+	border-bottom:1px solid #ccc;
+	
+
+}
+.footer-wrap .foot-top li{
+	float: left;
+	width: 307px;
+	height: 127px;
+	line-height: 127px;
+	text-align: center;
+
+}
+.footer-wrap .foot-top li p{
+	display: inline-block;
+	line-height: 1.5;
+	vertical-align: middle;
+}
+.footer-wrap .foot-top li p img{
+	
+}
+.footer-wrap .foot-top li p b{
+	display: block;
+	font-size: 18px;
+}
+.footer-wrap .foot-top li p span{
+	font-size: 14px;
+}
+.footer-wrap .foot-mid{height: 192px;}
+.footer-wrap .foot-mid li{
+	float: left;
+	width: 188px;
+	height: 152px;
+	padding-left: 10px;
+	margin-top: 20px;
+	
+}
+.footer-wrap .foot-mid li b{display: block;height: 32px;line-height: 32px;}
+.footer-wrap .foot-mid li a{display: block;height: 24px;line-height: 24px;}
+
+.footer-wrap .foot-mid .mid-rig p{float: left;margin-top: 20px;font-size: 14px;}
+.footer-wrap .foot-mid .mid-rig p + p{margin-left: 50px;}
+.footer-wrap .foot-mid .mid-rig p b{display: block;width: 90px;height: 32px;line-height: 32px;}
+
+.footer-wrap > p{margin:10px 0;text-align: center;word-spacing: 10px;}
+.footer-wrap > p + p{margin-bottom: 30px;}
+.footer-wrap > p > img{width: 90px;height: 31px; margin: 0 2px;}
+
+
+
+

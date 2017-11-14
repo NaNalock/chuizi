@@ -1,0 +1,163 @@
+<!--当前文档类型是html-->
+<!doctype html>
+<html>
+	<head>
+		 <!--meta没有实际意义，通过name值给它赋值赋予意义,声明当前编码机：gbk gb2313 中文编码
+		 utf-8  国际编码-->
+		 <meta http-equiv='Content-type' content='text/html;charset=utf-8' />
+		 <title>收货地址</title>
+		 <!--关键词限制在31字以内，用英文逗号隔开-->
+		 <meta name="Keywords" content="关键词,关键词" />
+		 <!--简介，描述信息，百度要求是80字以内 标准是76个字-->
+		 <meta name="description" content="描述描述" />
+
+	     <style type="text/css">
+			*{margin:0;padding:0;}
+			a{text-decoration:none;}
+			ul{list-style:none;}
+			img{border:0;}       /*针对兼容低版本IE*/
+			.clearfix:after{content:'';display:block;clear:both;}
+			.clearfix{zoom:1;}
+			body{color:#fff;}
+			.wrap{
+				width:600px;
+				margin:auto;
+				background-color: #515151;
+			}
+			.wrap h2{
+				padding-top:25px;
+				text-align:center;}
+			/*发货单*/
+			.wrap form{padding:20px;}
+			.wrap form fieldset{
+				border:2px solid #fff;
+				margin-bottom:20px;
+				
+			}
+			.wrap form legend{
+				margin-left:20px;
+				
+			}
+			.wrap form table{
+				width:100%;
+				padding:20px;
+			}
+			.wrap form table td{
+				
+				padding:10px 0;
+			}
+			.wrap form table td input{
+				height:25px;
+				border:none;
+			}
+			.wrap form table td .btn1{width:100%;}
+			.wrap form table .box1 input{
+				vertical-align:middle;
+			}
+			.wrap form table td .btn2{width:50px;}
+			.wrap form table td .btn3{width:100%;}
+			.wrap form table td .btn4{width:100%;}
+
+			.wrap form .bot{text-align:center;}
+	     </style>
+	</head>
+	<body>
+		<div class='wrap'>
+			<h2>增加快递信息</h2>
+			<form>
+	<!--发货单-->
+				<fieldset>
+					<legend>发货单</legend>
+					<table>
+						<tr>
+							<td>发货人：</td>
+							<td><input type='text' name='text' /></td>
+							<td>地址：</td>
+							<td><input type='text' name='text' /></td>
+						</tr>
+						<tr>
+							<td>电话：</td>
+							<td><input type='text' name='text' /></td>
+							<td>邮编：</td>
+							<td><input type='text' name='text' /></td>
+						</tr>
+					</table>
+				</fieldset>
+<!--收货单-->
+				<fieldset>
+					<legend>收货单</legend>
+					<table>
+						<tr>
+							<td>收货人：</td>
+							<td><input type='text' name='text' /></td>
+							<td>地址：</td>
+							<td><input type='text' name='text' /></td>
+						</tr>
+						<tr>
+							<td>电话：</td>
+							<td><input type='text' name='text' /></td>
+							<td>邮编：</td>
+							<td><input type='text' name='text' /></td>
+						</tr>
+						<tr>
+							<td>地区：</td>
+							<td>
+								<select class='btn1'>
+									<option type='text'>北京</option>
+									<option type='text'>上海</option>
+									<option type='text'>湖南</option>
+									<option type='text'>广东</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>包装：</td>
+							<td class='box1'colspan='3'>
+								<input type='checkbox' name='wrap' name='纸箱' />纸箱
+								<input type='checkbox' name='wrap' name='木箱' />木箱
+								<input type='checkbox' name='wrap' name='快递袋' />快递袋
+								<input type='checkbox' name='wrap' name='其他' />其他
+							</td>
+							
+						</tr>
+						<tr>
+							<td>付款方式：</td>
+							<td class='box1' colspan='3'>
+								<input type='radio' name='wrap' name='现金' />现金
+								<input type='radio' name='wrap' name='支付宝' />支付宝
+								<input type='radio' name='wrap' name='网银' />网银
+								<input type='radio' name='wrap' name='ATM' />ATM
+							</td>
+							
+						</tr>
+					</table>
+				</fieldset>
+<!--收货信息-->
+				<fieldset>
+					<legend>货物信息</legend>
+					<table>
+						<tr>
+							<td>货物名称：</td>
+							<td colspan='5'><input type='text' name='text' class='btn3' /></td>
+							
+						</tr>
+						<tr>
+							<td>数量：</td>
+							<td><input type='text' name='text' class='btn2' /></td>
+							<td>重量：</td>
+							<td><input type='text' name='text' class='btn2'  /></td>
+							<td>发货时间：</td>
+							<td><input type='text' name='text' class='btn4'/></td>
+						</tr>
+					</table>
+				</fieldset>
+				<div class='bot'>
+					<input type='submit' value='确定' />
+					<input type='submit' value='取消' />
+				</div>
+			</form>	
+		</div>
+	
+	</body>
+
+</html>
